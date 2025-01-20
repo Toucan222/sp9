@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StockSentinel</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <nav class="nav-menu">
+        <div class="nav-group">
+          <a href="#" class="nav-item active">
+            <i class="ph ph-chart-line-up"></i>
+            <span>Overview</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="ph ph-trending-up"></i>
+            <span>Performance</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="ph ph-clock"></i>
+            <span>History</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="ph ph-chart-bar"></i>
+            <span>Metrics</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="ph ph-money"></i>
+            <span>Financials</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="ph ph-camera"></i>
+            <span>Media</span>
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="main-header">
+        <div class="stock-info">
+          <div class="stock-avatar">A</div>
+          <div class="stock-details">
+            <h1>Apple Inc <span class="stock-ticker">AAPL</span></h1>
+            <div class="stock-meta">
+              <span><i class="ph ph-user"></i> CEO: Tim Cook</span>
+              <span><i class="ph ph-map-pin"></i> HQ: Cupertino, CA</span>
+              <span><i class="ph ph-tag"></i> Consumer Electronics</span>
+            </div>
+          </div>
+          <div class="stock-performance positive">
+            <span class="year">2024:</span>
+            <span class="value">+7.8%</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="analysis-section">
+        <div class="section-header">
+          <h2>Analysis Overview</h2>
+          <div class="playback-controls">
+            <span class="time-current">2:21</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 35%"></div>
+            </div>
+            <span class="time-total">7:05</span>
+            <div class="speed-controls">
+              <button class="speed-btn active">1x</button>
+              <button class="speed-btn">1.5x</button>
+              <button class="speed-btn">2x</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="metrics-grid">
+        <section class="performance-metrics">
+          <div class="section-header">
+            <h2>Performance Metrics</h2>
+            <button class="show-advanced">Show Advanced <i class="ph ph-caret-down"></i></button>
+          </div>
+          
+          <div class="metrics-list">
+            <div class="metric-item">
+              <div class="metric-header">
+                <span class="metric-name">Profitability</span>
+                <i class="ph ph-info"></i>
+                <span class="metric-score">10</span>
+              </div>
+              <div class="metric-bar">
+                <div class="progress" style="width: 100%"></div>
+              </div>
+            </div>
+
+            <div class="metric-item">
+              <div class="metric-header">
+                <span class="metric-name">Company Viability</span>
+                <i class="ph ph-info"></i>
+                <span class="metric-score">10</span>
+              </div>
+              <div class="metric-bar">
+                <div class="progress" style="width: 100%"></div>
+              </div>
+            </div>
+
+            <!-- Add more metrics -->
+          </div>
+        </section>
+
+        <section class="scenario-analysis">
+          <div class="section-header">
+            <h2>Scenario Analysis</h2>
+            <button class="view-assumptions">View Assumptions <i class="ph ph-info"></i></button>
+          </div>
+
+          <div class="scenarios-grid">
+            <div class="scenario-card negative">
+              <div class="scenario-header">
+                <i class="ph ph-trend-down"></i>
+                <span class="scenario-value">-3%</span>
+              </div>
+              <ul class="scenario-points">
+                <li>Market share loss in key segments</li>
+                <li>Margin pressure from competition</li>
+              </ul>
+            </div>
+
+            <div class="scenario-card neutral">
+              <div class="scenario-header">
+                <i class="ph ph-minus"></i>
+                <span class="scenario-value">+2%</span>
+              </div>
+              <ul class="scenario-points">
+                <li>Stable growth in services</li>
+                <li>Continued premium positioning</li>
+              </ul>
+            </div>
+
+            <div class="scenario-card positive">
+              <div class="scenario-header">
+                <i class="ph ph-trend-up"></i>
+                <span class="scenario-value">+8%</span>
+              </div>
+              <ul class="scenario-points">
+                <li>AR/VR device launches spark new product category</li>
+                <li>Services revenue leaps from streaming</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
